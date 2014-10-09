@@ -1,12 +1,16 @@
 {
-  "author": "Lloyd",
-  "name": "simpleapp",
-  "version": "0.0.0",
-  "homepage": "http://www.lloydntim.com",
+  "author": "Josh David Miller",
+  "name": "ngbp",
+  "version": "0.3.2",
+  "homepage": "https://github.com/ngbp/ngbp",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+  },
   "bugs": "https://github.com/ngbp/ngbp/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:lloyd85/simpleapp.git"
+    "url": "git@github.com:ngbp/ngbp.git"
   },
   "dependencies": {},
   "devDependencies": {
