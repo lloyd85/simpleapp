@@ -1,6 +1,7 @@
 angular.module( 'ngBoilerplate.login', [
   'ui.router',
-  'plusOne'
+  'plusOne',
+  'formValidator'
 ])
 
 /**
@@ -27,5 +28,6 @@ angular.module( 'ngBoilerplate.login', [
 .controller( 'LoginCtrl', function LoginController( $scope, $location ) {
   $scope.name = 'login';
   $scope.path = $location.path(); //find out what this means
+
 });
 
