@@ -9,7 +9,7 @@ angular.module( 'ngBoilerplate.signup', [
     url: '/signup',
     views: {
       "main": {
-        controller: 'signupCtrl',
+        controller: 'SignUpCtrl',
         templateUrl: 'signup/signup.tpl.html'
       }
     },
