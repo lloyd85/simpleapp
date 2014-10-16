@@ -342,7 +342,8 @@ module.exports = function ( grunt ) {
      */
     karma: {
       options: {
-        configFile: '<%= build_dir %>/karma-unit.js'
+        configFile: '<%= build_dir %>/karma-unit.js',
+        livereload: true
       },
       unit: {
         port: 9019,
@@ -437,7 +438,7 @@ module.exports = function ( grunt ) {
         files: 'Gruntfile.js',
         tasks: [ 'jshint:gruntfile' ],
         options: {
-          livereload: false
+          livereload: true
         }
       },
 
