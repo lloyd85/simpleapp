@@ -1,0 +1,330 @@
+<div class="jumbotron">
+    <form id="addEventForm" method="" action="#" data-ajax="false" class="form-horizontal">
+        <h1>New Event</h1>
+
+        <fieldset>
+            <legend>Event Details</legend>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="name" class="col-sm-3">Event Name</label>
+                <div class="col-sm-9">
+                    <input id="name" type="text" placeholder="Enter Event Name" name="name"  class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="info" class="col-sm-3">Event Description</label>
+                <div class="col-sm-9">
+                    <textarea id="info" placeholder="Enter what Event is about" name="info" class="input-xlarge form-control"></textarea>
+                </div>
+           </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Start</legend>
+
+            <!-- Select input-->
+            <div class="control-group form-group">
+                <label class="col-sm-3">Start Date</label>
+                <div class="col-sm-9">
+                    <select id="startDay" name="startDay" class="selectpicker form-control col-sm-4 l-width-33pc">
+                        <option>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+
+                    <select id="startMonth" name="startMonth" class="form-control col-sm-4 l-width-33pc">
+                        <option>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+
+                    <select id="startYear" name="startYear" class="selectpicker form-control col-sm-4 l-width-33pc">
+                        <option>Year</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Select input-->
+            <div class="control-group form-group">
+                <label class="col-sm-3">Start Time</label>
+                <div class="col-sm-9">
+                    <select id="startHours" name="startHours" class="selectpicker form-control col-sm-6 l-width-50pc">
+                        <option>Hours</option>
+                        <option> 0</option>
+                        <option> 1</option>
+                        <option> 2</option>
+                        <option> 3</option>
+                        <option> 4</option>
+                        <option> 5</option>
+                        <option> 6</option>
+                        <option> 7</option>
+                        <option> 8</option>
+                        <option> 9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                    </select>
+
+                    <select id="startMinutes" name="startMinutes" class="selectpicker form-control col-sm-6 l-width-50pc">
+                        <option>Minutes</option>
+                        <option>00</option>
+                        <option>05</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>30</option>
+                        <option>35</option>
+                        <option>40</option>
+                        <option>45</option>
+                        <option>50</option>
+                        <option>55</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Finish</legend>
+
+            <!-- Select input-->
+            <div class="control-group form-group">
+                <label class="col-sm-3">End Date</label>
+                <div class="col-sm-9">
+                    <select id="endDay" name="endDay" class="selectpicker form-control l-width-33pc col-sm-4">
+                        <option>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+
+                    <select id="endMonth" name="endMonth" class="selectpicker form-control l-width-33pc col-sm-4" >
+                        <option>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+
+                    <select id="endYear" name="endYear" class="selectpicker form-control l-width-33pc col-sm-4">
+                        <option>Year</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label class="col-sm-3">End Time</label>
+                <div class="col-sm-9">
+                    <select id="endHours" name="endHours" class="selectpicker form-control l-width-50pc col-sm-4">
+                        <option>Hours</option>
+                        <option> 0</option>
+                        <option> 1</option>
+                        <option> 2</option>
+                        <option> 3</option>
+                        <option> 4</option>
+                        <option> 5</option>
+                        <option> 6</option>
+                        <option> 7</option>
+                        <option> 8</option>
+                        <option> 9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                    </select>
+
+                    <select id="endMinutes" name="endMinutes" class="selectpicker form-control l-width-50pc col-sm-4">
+                        <option>Minutes</option>
+                        <option>00</option>
+                        <option>05</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>30</option>
+                        <option>35</option>
+                        <option>40</option>
+                        <option>45</option>
+                        <option>50</option>
+                        <option>55</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Address</legend>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="street" class="col-sm-3">Street</label>
+                <div class="col-sm-9">
+                    <input id="street" type="text" placeholder="Street and Number" name="street" class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="city" class="col-sm-3">City</label>
+                <div class="col-sm-9">
+                    <input id="city" type="text" placeholder="City" name="city" class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="postcode" class="col-sm-3">Postcode</label>
+                <div class="col-sm-9">
+                    <input id="postcode" type="text" placeholder="Postcode" name="postcode" class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="country" class="col-sm-3">Country</label>
+                <div class="col-sm-9">
+                    <input id="country" type="text" placeholder="Country" name="country" class="input-xlarge form-control"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Contact Details</legend>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="site" class="col-sm-3">Website</label>
+                <div class="col-sm-9">
+                    <input id="site" type="text" placeholder="Official Website" name="site" class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label for="phone" class="col-sm-3">Phone Number</label>
+                <div class="col-sm-9">
+                    <input id="phone" type="text" placeholder="Phone Number" name="phone" class="input-xlarge form-control"/>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <div class="col-sm-9">
+                    <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+                    <button type="reset" class="btn btn-default btn-sm">Reset</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+

@@ -1,77 +1,77 @@
 <div class="jumbotron">
+    <h1>Form Name</h1>
     <form class="form-horizontal">
         <fieldset>
 
             <!-- Form Name -->
-            <legend>Form Name</legend>
+            <legend>Details</legend>
 
             <!-- Text input-->
-            <div class="control-group">
-                <label class="control-label" for="firstname">First Name</label>
-                <div class="controls">
-                    <input id="firstname" name="firstname" type="text" placeholder="firstname" class="input-xlarge" required="">
-                    <p class="help-block">Please enter a your first name</p>
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="firstname">First Name</label>
+                <div class="col-sm-9">
+                    <input id="firstname" name="firstname" type="text" placeholder="firstname" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Please enter a your first name</p>
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="control-group">
-                <label class="control-label" for="lastname">Last Name</label>
-                <div class="controls">
-                    <input id="lastname" name="lastname" type="text" placeholder="lastname" class="input-xlarge" required="">
-                    <p class="help-block">Please enter your last name</p>
+                <label class="control-label col-sm-3" for="lastname">Last Name</label>
+                <div class="col-sm-9">
+                    <input id="lastname" name="lastname" type="text" placeholder="lastname" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Please enter your last name</p>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group form-group">
+                <label class="control-label col-sm-3 col-sm-3" for="email">Email</label>
+                <div class="controls col-sm-9">
+                    <input id="email" name="email" type="text" placeholder="email" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Please enter a valid email</p>
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="control-group">
-                <label class="control-label" for="email">Email</label>
-                <div class="controls">
-                    <input id="email" name="email" type="text" placeholder="email" class="input-xlarge" required="">
-                    <p class="help-block">Please enter a valid email</p>
+                <label class="control-label col-sm-3" for="phone">Phone</label>
+                <div class="controls col-sm-9">
+                    <input id="phone" name="phone" type="text" placeholder="phone" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Please enter a valid phone number</p>
                 </div>
             </div>
 
             <!-- Text input-->
             <div class="control-group">
-                <label class="control-label" for="phone">Phone</label>
-                <div class="controls">
-                    <input id="phone" name="phone" type="text" placeholder="phone" class="input-xlarge" required="">
-                    <p class="help-block">Please enter a valid phone number</p>
-                </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="control-group">
-                <label class="control-label" for="username">Username</label>
-                <div class="controls">
-                    <input id="username" name="username" type="text" placeholder="username" class="input-xlarge" required="">
-                    <p class="help-block">Must be between 6 - 12 characters long and include a digit and capital letter</p>
+                <label class="control-label col-sm-3" for="username">Username</label>
+                <div class="controls col-sm-9">
+                    <input id="username" name="username" type="text" placeholder="username" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Must be between 6 - 12 characters long and include a digit and capital letter</p>
                 </div>
             </div>
 
             <!-- Password input-->
             <div class="control-group">
-                <label class="control-label" for="password">Password</label>
-                <div class="controls">
-                    <input id="password" name="password" type="password" placeholder="password" class="input-xlarge" required="">
-                    <p class="help-block">Must be be between 6 - 12 characters long and include a at least one digit and capital letter</p>
+                <label class="control-label col-sm-3" for="password">Password</label>
+                <div class="controls col-sm-9">
+                    <input id="password" name="password" type="password" placeholder="password" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Must be be between 6 - 12 characters long and include a at least one digit and capital letter</p>
                 </div>
             </div>
 
             <!-- Password input-->
             <div class="control-group">
-                <label class="control-label" for="confirmPassword">Confirm Password</label>
-                <div class="controls">
-                    <input id="confirmPassword" name="confirmPassword" type="password" placeholder="confirm password" class="input-xlarge" required="">
-                    <p class="help-block">Passwords do not match </p>
+                <label class="control-label col-sm-3" for="confirmPassword">Confirm Password</label>
+                <div class="controls col-sm-9">
+                    <input id="confirmPassword" name="confirmPassword" type="password" placeholder="confirm password" class="input-xlarge form-control" required="">
+                    <p class="help-block text-left">Passwords do not match </p>
                 </div>
             </div>
 
             <!-- Button (Double) -->
             <div class="control-group">
-                <label class="control-label" for="button1id">Double Button</label>
-                <div class="controls">
+                <div class="controls col-sm-offset-3 col-sm-9 text-left">
                     <button id="button1id" name="button1id" class="btn btn-success">Submit</button>
                     <button id="button2id" name="button2id" class="btn btn-danger">Reset</button>
                 </div>
