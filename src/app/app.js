@@ -6,6 +6,8 @@ angular.module( 'ngBoilerplate', [
   'ngBoilerplate.signup',
   'ngBoilerplate.login',
   'ngBoilerplate.newevent',
+  'ngBoilerplate.events',
+  'ngBoilerplate.userdetails',
   'ui.router'
 ])
 

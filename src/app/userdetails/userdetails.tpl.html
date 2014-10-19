@@ -1,0 +1,34 @@
+<div class="jumbotron">
+    <header>
+        <hgroup>
+            <h1>My Details</h1>
+            <h2>Main Details</h2>
+        </hgroup>
+    </header>
+
+    <ul style="text-align:left;">
+        <li class="user-fname ui-li-desc">{{firstname}}</li>
+        <li class="user-lname ui-li-desc">{{lastname}}</li>
+        <li class="user-email ui-li-desc">{{email}}</li>
+        <li class="user-phone ui-li-desc">{{phone}}</li>
+    </ul>
+
+    <div class="control-group optionButtons"  id="undefined">
+        <a class="btn btn-xs btn-info" role="button">Edit</a>
+    </div>
+
+    <div id="deletePopupMyDetails" class="">
+        <ul class="listview" >
+            <li><strong>Are you sure you want to delete your profile?</strong></li>
+            <li>
+                <p>This action cannot be undone.</p>
+                <div class="col-sm-9 btn-group">
+                    <a id="user._id" class="myDetailsDeleteButton btn btn-xs btn-success">Delete</a>
+                    <a class="btn btn-xs btn-danger">Cancel</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
