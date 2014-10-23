@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5156a591-daa6-46fd-b199-340010fc3839" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/dataService/dataService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/dataService/dataService.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/events/events.less" afterPath="$PROJECT_DIR$/src/app/events/events.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/events/events.tpl.html" afterPath="$PROJECT_DIR$/src/app/events/events.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.less" afterPath="$PROJECT_DIR$/src/app/home/home.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simpleapp.iws" />
@@ -161,8 +156,8 @@
           <file leaf-file-name="events.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/events/events.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21875" vertical-offset="0" max-vertical-offset="595">
-                  <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+                <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="595">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -855,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/events/events.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21875" vertical-offset="0" max-vertical-offset="595">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="595">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
