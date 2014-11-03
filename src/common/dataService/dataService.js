@@ -1,59 +1,33 @@
-/**
- * Created by Lloyd on 10/10/2014.
- */
-angular.module('formValidator', [])
-    .service('formValidator', function () {
+'use strict';
 
-        function testInputValue (regEx, inputValue) {
-            var pattern = regEx;
-            return pattern.test(inputValue);
-        }
+angular.module('dataService', [])
 
-        this.usernameConfig = {
-            minLength: 4,
-            maxLength: 10,
-            hasNum: true,
-            hasCaps: false,
-            hasSpecChar:false
-        };
+    .factory('dataService', ['$http', '$q', function($http, $q) {
+        var fileService = {};
 
-        this.validateUsername = function (userName) {
-            var config = this.usernameConfig,
-                strLength = userName.length,
-                isValid = false,
-                userNamePattern,
-                regExString = 'a-z';
+        fileService.getUsers = function() {
+            var defer = $q.defer();
 
-            if (strLength < config.maxLength && strLength > config.minLength) {
+            $http
+                .get("http://localhost:8000/app/data.json") // making http get request to load the json file
+                .then(function(response) {
+                    defer.resolve(response.data.users);
+                });
 
-                if (config.hasCaps) {
-                    regExString+= 'A-Z';
-                }
+                return defer.promise;
+            };
 
-                if (config.hasSpecChar) {
-                    regExString+= '^A-Za-z0-9_';
-                }
+            /*this.getUser = function (id) {
+                var defer = $q.defer();
 
-                if (config.hasNum) {
-                    regExString+= '0-9';
-                }
-                userNamePattern = new RegExp('[' + regExString + ']');
-                isValid = testInputValue(userNamePattern, userName);
+                $http
+                    .get("productDetails.json")
+                    .then(function (response) {
+                        defer.resolve(response.data);
+                    });
 
-                return isValid;
-            }
-        };
+                return defer.promise;
+            };*/
 
-        this.validateEmail = function (email) {
-            var emailPattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                result = testInputValue(emailPattern, email);
-            return result;
-        };
-        this.validatePhone = function (phone) {
-            var phonePattern = /(00\d+\s*|\+\d+\s*|0\s*)(\d+\s*)*(\/)\s*(\d+\s*)*/g,
-                result = testInputValue(phonePattern, phone);
-            return result;
-        };
-        // Can this be done better?
-
-    });
+        return fileService;
+    }]);

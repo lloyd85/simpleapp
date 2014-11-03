@@ -1,0 +1,143 @@
+{
+  "users" : [{
+    "_id": 0,
+
+    "username": "admin",
+    "password": "admin",
+
+    "details" : {
+      "fname": "Lloyd",
+      "lname": "Ntim",
+      "dob": "23-02-85",
+      "origin": "Germany",
+      "job": "FE Developer",
+      "profile_img": ""
+    },
+    "contacts": {
+      "private": {
+        "phone": "020 45 393 292",
+        "mobile": "079 0303 033 303",
+        "address": {
+          "house":"",
+          "street":"",
+          "county":"",
+          "city":"",
+          "postcode":"",
+          "country":""
+        }
+      },
+      "social": {
+        "facebook": "kwame.duah",
+        "linkedin": "linkedin/kwame.duah",
+        "googleplus": "kwame23",
+        "twitter": "lloyd23"
+      }
+    }
+  },
+  {
+    "userid": 1,
+
+    "username": "hwurst10",
+    "password": "password123",
+
+    "details" : {
+      "fname": "Hans",
+      "lname": "Wurst",
+      "dob": "04-11-69",
+      "origin": "Deutschland",
+      "job": "Butcher",
+      "profile_img": ""
+    },
+    "contacts": {
+      "private": {
+        "phone": "020 65 09 378",
+        "mobile": "079 2637 428 547",
+        "address": {
+          "house":"",
+          "street":"",
+          "county":"",
+          "city":"",
+          "postcode":"",
+          "country":""
+        }
+      },
+      "social": {
+        "facebook": "hans.wurst",
+        "linkedin": "linkedin/hans.wurst",
+        "googleplus": "hawu4567",
+        "twitter": "lloyd23"
+      }
+    }
+  },
+  {
+    "_id": 2,
+
+    "username": "johnnydoe",
+    "password": "logmein",
+
+    "details" : {
+      "fname": "John",
+      "lname": "Doe",
+      "dob": "26-01-71",
+      "origin": "Deutschland",
+      "job": "Unemployed",
+      "profile_img": ""
+    },
+    "contacts": {
+      "private": {
+        "phone": "020 45 393 292",
+        "mobile": "079 546 876 66",
+        "address": {
+          "house":"",
+          "street":"",
+          "county":"",
+          "city":"",
+          "postcode":"",
+          "country":""
+        }
+      },
+      "social": {
+        "facebook": "facebook/john.doe",
+        "linkedin": "linkedin/john.doe",
+        "googleplus": "johndboy",
+        "twitter": "jdoebro"
+      }
+    }
+  },
+  {
+    "_id": 3,
+
+    "username": "janeplane",
+    "password": "idontknow4",
+
+    "details" : {
+      "fname": "Jane",
+      "lname": "Plain",
+      "dob": "12-04-56",
+      "origin": "England",
+      "job": "Taylor",
+      "profile_img": ""
+    },
+    "contacts": {
+      "private": {
+        "phone": "020 89 487 123",
+        "mobile": "079 4945 234 890",
+        "address": {
+          "house":"",
+          "street":"",
+          "county":"",
+          "city":"",
+          "postcode":"",
+          "country":""
+        }
+      },
+      "social": {
+        "facebook": "facebook/jane.plain",
+        "linkedin": "linkedin/jane.plain",
+        "googleplus": "janeplane123",
+        "twitter": "jblablabla"
+      }
+    }
+  }
+  ]
+}
