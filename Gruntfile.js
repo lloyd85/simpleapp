@@ -9,6 +9,7 @@ module.exports = function ( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-conventional-changelog');
@@ -81,7 +82,25 @@ module.exports = function ( grunt ) {
         push: false,
         pushTo: 'origin'
       }
-    },    
+    },
+
+    /**
+     * In this example, grunt connect (or more verbosely, grunt connect:server) will start a static web server
+     * */
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          livereload: 35729,
+          hostname: 'localhost',
+          keepalive: true,
+          base: 'build',
+          open: {
+            target: 'http://localhost:9000'
+          }
+        }
+      }
+    },
 
     /**
      * The directories to delete when `grunt clean` is executed.
@@ -521,7 +540,7 @@ module.exports = function ( grunt ) {
    * minifying your code.
    */
   grunt.registerTask( 'compile', [
-    'less:compile', 'copy:compile_assets', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile'
+    'less:compile', 'copy:compile_assets', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile', 'connect'
   ]);
 
   /**

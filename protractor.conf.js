@@ -22,10 +22,10 @@ exports.config = {
     defaultTimeoutInterval: 70000
   },
 
-  seleniumPort: 4444,
-  seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.43.1.jar',
-  //seleniumAddress: 'http://localhost:4444/wd/hub',
-  chromeDriver: 'node_modules/protractor/selenium/chromedriver',
+  seleniumPort: null,
+  //seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.43.1.jar', //works when ran locally
+  seleniumAddress: 'http://localhost:4444/wd/hub', // this works when ran globally
+  //chromeDriver: 'node_modules/protractor/selenium/chromedriver', // needed when ran locally
   //baseUrl: 'http://localhost:63343/simpleapp/build/#/home',
 
   framework: 'jasmine'
