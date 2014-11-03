@@ -60,14 +60,14 @@ module.exports = {
    * with our app's assets. This structure is flattened, so it is not
    * recommended that you use wildcards.
    */
-  vendor_files: {
-    js: [
-      'vendor/angular/angular.js',
-      'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
-      'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
-      'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/angular-ui-utils/modules/route/route.js'
-    ],
+    vendor_files: {
+      js: [
+        'vendor/angular/angular.js',
+        'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
+        'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
+        'vendor/angular-ui-router/release/angular-ui-router.js',
+        'vendor/angular-ui-utils/modules/route/route.js'
+      ],
     css: [
     ],
     assets: [

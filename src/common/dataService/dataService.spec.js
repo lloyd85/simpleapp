@@ -1,7 +1,5 @@
 describe('Data Managing Service', function () {
-    var mockData = {
-
-    }
+    var mockData = {  }
 
     beforeEach(module('dataService'));
     beforeEach(inject(function(_dataService_){
@@ -10,18 +8,14 @@ describe('Data Managing Service', function () {
 
     it('ensures call to userdata  has been made', function () {
        expect(dataService.user.getData().toHaveBeenCalled());
-
     });
 
     it('ensures call to userdata  for all events has been made', function () {
         expect(dataService.events.get().toHaveBeenCalled());
-
     });
-
 
     it('ensures call to userdata  for all events has been made', function () {
         expect(dataService.events.get(eventID).toHaveBeenCalled());
-
     });
 
     it('ensures call to userdata  for all events has been made', function () {
@@ -31,5 +25,4 @@ describe('Data Managing Service', function () {
     it('ensures call to userdata  for all events has been made', function () {
         expect(dataService.delete(eventID).toHaveBeenCalled());
     });
-
 });
