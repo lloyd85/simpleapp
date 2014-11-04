@@ -25,9 +25,32 @@ angular.module( 'simpleApp.login', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'LoginCtrl', function LoginController( $scope, $location ) {
+.controller( 'LoginCtrl', ['$scope', '$window', '$location', 'dataService', function LoginCtrl( $scope, $window, $location, dataService) {
+  var promise = dataService.getUsers();
   $scope.name = 'login';
-  $scope.path = $location.path(); //find out what this means
+  $scope.credentials = {
+    username: '',
+    password: ''
+  };
 
-});
+  $scope.isLoggedIn = null;
+  $scope.login = function (credentials) {
+    promise.then(function (data) {
+      $scope.validateUser(data);
+    });
+  };
+
+  $scope.validateUser = function (users) {
+    angular.forEach(users, function (user) {
+      if(user.username == $scope.credentials.username && user.password == $scope.credentials.password) {
+        $window.location = '/#/welcome';
+        $scope.isLoggedIn = true;
+      }
+      else {
+        $scope.isLoggedIn = false;
+      }
+    });
+  };
+
+}]);
 

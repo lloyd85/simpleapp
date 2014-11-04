@@ -1,4 +1,3 @@
-'use strict';
 
 angular.module('dataService', [])
 
@@ -9,7 +8,7 @@ angular.module('dataService', [])
             var defer = $q.defer();
 
             $http
-                .get("http://localhost:9000/app/data.json") // making http get request to load the json file
+                .get("data.json") // making http get request to load the json file
                 .then(function(response) {
                     defer.resolve(response.data.users);
                 });

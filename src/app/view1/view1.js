@@ -1,13 +1,20 @@
-'use strict';
+angular.module( 'simpleApp.view1', [
+    'ui.router',
+    'ui.bootstrap'
+])
 
-/*angular.module('myApp.view1', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.tpl.html',
-    controller: 'View1Ctrl'
-  });
-}])
+.config(function config( $stateProvider ) {
+    $stateProvider.state( 'view1', {
+        url: '/view1',
+        views: {
+            "main": {
+                controller: 'View1Ctrl',
+                templateUrl: '/view1.tpl.html'
+            }
+        },
+        data:{ pageTitle: 'List of Users' }
+    });
+})
 
 .controller('View1Ctrl', ['$scope', function($scope) {
     $scope.master = {};
@@ -25,4 +32,4 @@
     };
 
     $scope.reset();
-}]);*/
+}]);

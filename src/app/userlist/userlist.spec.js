@@ -1,6 +1,5 @@
-'use strict';
 
-describe('simpleApp.userlist module', function() {
+describe('Userlist module module', function() {
 
   var scope,
       $rootScope,

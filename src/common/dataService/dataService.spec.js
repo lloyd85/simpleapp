@@ -1,4 +1,3 @@
-'use strict';
 
 describe('Data Managing Service', function () {
     var mockData = {

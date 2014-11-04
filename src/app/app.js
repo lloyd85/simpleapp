@@ -7,9 +7,11 @@ angular.module( 'simpleApp', [
   'simpleApp.login',
   'simpleApp.newevent',
   'simpleApp.events',
+  'simpleApp.welcome',
   'simpleApp.userdetails',
   'simpleApp.userlist',
   'simpleApp.view1',
+  'dataService',
   'ui.router'
 ])
 

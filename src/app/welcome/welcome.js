@@ -1,6 +1,5 @@
 angular.module( 'simpleApp.welcome', [
   'ui.router',
-  'placeholders',
   'ui.bootstrap'
 ])
 
@@ -24,6 +23,4 @@ angular.module( 'simpleApp.welcome', [
     "Better",
     "The Best"
   ];
-})
-
-;
+});

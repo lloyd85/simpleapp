@@ -2,7 +2,7 @@
   "users" : [{
     "_id": 0,
 
-    "username": "admin",
+    "username": "admin@admin.com",
     "password": "admin",
 
     "details" : {
