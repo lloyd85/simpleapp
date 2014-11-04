@@ -1,13 +1,15 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'simpleApp', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
-  'ngBoilerplate.signup',
-  'ngBoilerplate.login',
-  'ngBoilerplate.newevent',
-  'ngBoilerplate.events',
-  'ngBoilerplate.userdetails',
+  'simpleApp.home',
+  'simpleApp.about',
+  'simpleApp.signup',
+  'simpleApp.login',
+  'simpleApp.newevent',
+  'simpleApp.events',
+  'simpleApp.userdetails',
+  'simpleApp.userlist',
+  'simpleApp.view1',
   'ui.router'
 ])
 
@@ -21,7 +23,7 @@ angular.module( 'ngBoilerplate', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | simpleApp' ;
     }
   });
 })

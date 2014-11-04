@@ -1,5 +1,5 @@
 
-angular.module( 'ngBoilerplate.newevent', [
+angular.module( 'simpleApp.newevent', [
   'ui.router',
   'plusOne'
 ])

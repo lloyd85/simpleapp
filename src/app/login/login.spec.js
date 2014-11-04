@@ -6,7 +6,7 @@ describe( 'login page', function() {
 		path = '/welcome';
 
     beforeEach( module( 'formValidator' ) );
-	beforeEach( module( 'ngBoilerplate.login' ) ); // this initeatis the module we need for the $controller to have its reference
+	beforeEach( module( 'simpleApp.login' ) ); // this initeatis the module we need for the $controller to have its reference
 
 	beforeEach(inject(function($controller, $rootScope, $location) {
         scope = $rootScope.$new ();

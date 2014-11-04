@@ -1,5 +1,5 @@
 describe( 'Userdetails Form', function() {
-  beforeEach( module( 'ngBoilerplate.userdetails' ) );
+  beforeEach( module( 'simpleApp.userdetails' ) );
 
   it( 'should invoke a pop up when pressed', inject( function() {
     expect( true ).toBeTruthy();

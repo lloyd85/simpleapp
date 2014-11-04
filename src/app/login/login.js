@@ -1,4 +1,4 @@
-angular.module( 'ngBoilerplate.login', [
+angular.module( 'simpleApp.login', [
   'ui.router',
   'plusOne',
   'formValidator'

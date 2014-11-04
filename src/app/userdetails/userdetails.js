@@ -1,5 +1,5 @@
 
-angular.module( 'ngBoilerplate.userdetails', [
+angular.module( 'simpleApp.userdetails', [
   'ui.router',
   'plusOne'
 ])

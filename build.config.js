@@ -40,6 +40,13 @@ module.exports = {
   },
 
   /**
+   * This is the local data needed
+   * */
+  local_data: {
+    json: ['data.json']
+  },
+
+  /**
    * This is the same as `app_files`, except it contains patterns that
    * reference vendor code (`vendor/`) that we need to place into the build
    * process somewhere. While the `app_files` property ensures all

@@ -1,13 +1,13 @@
 'use strict';
 
-describe('myApp.view2 module', function() {
+describe('simpleApp.userlist module', function() {
 
   var scope,
       $rootScope,
       mockedFactory,
-      view2Ctrl;
+      UserListCtrl;
 
-  beforeEach(module('myApp.view2', function($provide) {
+  beforeEach(module('simpleApp.userlist', function($provide) {
     mockedFactory = {
       save: jasmine.createSpy()
     };
@@ -16,13 +16,13 @@ describe('myApp.view2 module', function() {
 
   beforeEach(inject(function(_$rootScope_, _$controller_) {
     $rootScope = _$rootScope_;
-    view2Ctrl = _$controller_;
+    UserListCtrl = _$controller_;
 
     scope = $rootScope.$new();
   }));
 
   it('should ... .', function() {
-    expect(view2Ctrl).toBeDefined();
+    expect(UserListCtrl).toBeDefined();
   });
 
 });

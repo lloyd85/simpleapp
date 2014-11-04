@@ -1,4 +1,4 @@
-angular.module( 'ngBoilerplate.welcome', [
+angular.module( 'simpleApp.welcome', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'

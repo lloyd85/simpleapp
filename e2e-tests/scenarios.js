@@ -57,13 +57,13 @@ describe('my app', function() {
 
   });
 
-  describe('view2', function() {
+  describe('userlist', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/userlist');
     });
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render userlist when user navigates to /userlist', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });

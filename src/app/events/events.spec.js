@@ -1,6 +1,6 @@
 describe( 'Event List', function() {
 
-    beforeEach( module( 'ngBoilerplate.events' ) );
+    beforeEach( module( 'simpleApp.events' ) );
 
     it( 'should load events', inject( function() {
     expect( true ).toBeTruthy();

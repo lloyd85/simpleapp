@@ -1,5 +1,5 @@
 
-angular.module( 'ngBoilerplate.signup', [
+angular.module( 'simpleApp.signup', [
   'ui.router',
   'plusOne'
 ])

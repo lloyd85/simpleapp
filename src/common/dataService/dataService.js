@@ -9,7 +9,7 @@ angular.module('dataService', [])
             var defer = $q.defer();
 
             $http
-                .get("http://localhost:8000/app/data.json") // making http get request to load the json file
+                .get("http://localhost:9000/app/data.json") // making http get request to load the json file
                 .then(function(response) {
                     defer.resolve(response.data.users);
                 });
@@ -17,7 +17,7 @@ angular.module('dataService', [])
                 return defer.promise;
             };
 
-            /*this.getUser = function (id) {
+            /* this.getUser = function (id) {
                 var defer = $q.defer();
 
                 $http
