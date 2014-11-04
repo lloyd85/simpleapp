@@ -7,7 +7,7 @@ describe( 'User History Service', function() {
     userHistory,
     mockTickEvent;
 
-    beforeEach( module( 'userHistory' ) ); // this initeatis the module we need for the $controller to have its reference
+    beforeEach( module( 'userHistory' ) );
 
     beforeEach(inject(function( _userHistory_) {
         userHistory = _userHistory_;

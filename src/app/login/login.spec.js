@@ -17,34 +17,39 @@ describe( 'login page', function() {
             }
         ]
     },
-    scope,
+    $scope,
+        $window,
+        $location,
+    dataService,
+
     path = '/welcome';
 
-    beforeEach( module( 'simpleApp.login')); // this initeatis the module we need for the $controller to have its reference
+    beforeEach( module( 'dataService'));
+    beforeEach( module( 'simpleApp.login'));
 
-    beforeEach(inject(function($controller, $rootScope, $location) {
-        scope = $rootScope.$new ();
-        scope.credentials = userDetails;
 
-        scope.validateUser(remoteUserDetails);
+    beforeEach(inject(function($rootScope, $window, $location, $controller, _dataService_) {
+        $scope = $rootScope.$new();
+        dataService = _dataService_;
+        $window = $window;
+        $location = $location;
+        $scope.credentials = userDetails;
 
-        /*var deferred = $q.defer();
-        deferred.resolve(remoteUserDetails); //  always resolved, you can do it from your spec
-
-        spyOn(dataService, 'getUsers').andReturn(deferred.promise);*/
-
-        spyOn($location, 'path').andReturn(path);
+        $scope.validateUser(remoteUserDetails);
 
         $controller('LoginCtrl', {
-            $scope: scope
+            $scope: $scope,
+            dataService: _dataService_,
+            $window: $window,
+            $location: $location
         });
     }));
 
-    it( 'should iniatise scope', function() {
-        expect( scope.name ).toEqual('login');
+    it( 'should initialise $scope', function() {
+        expect( $scope.name ).toBe('login');
     });
 
     it( 'ensures path has changed', function() {
-        expect( scope.isLoggedIn ).toBeTruthy();
+      expect( $scope.isLoggedIn ).toBeTruthy();
     });
 });

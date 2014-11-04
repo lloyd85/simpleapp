@@ -34,10 +34,8 @@ angular.module( 'simpleApp.login', [
   };
 
   $scope.isLoggedIn = null;
-  $scope.login = function (credentials) {
-    promise.then(function (data) {
-      $scope.validateUser(data);
-    });
+  $scope.login = function () {
+    promise.then($scope.validateUser(data));
   };
 
   $scope.validateUser = function (users) {
