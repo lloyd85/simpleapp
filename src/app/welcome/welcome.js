@@ -20,7 +20,7 @@ angular.module( 'simpleApp.welcome', [
   // This is simple a demo for UI Boostrap.
   $scope.dropdownDemoItems = [
     "Good",
-    "Better",
-    "The Best"
+    "Better run",
+    "The Best "
   ];
 });

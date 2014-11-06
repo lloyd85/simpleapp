@@ -25,7 +25,7 @@ angular.module( 'simpleApp.login', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'LoginCtrl', ['$scope', '$window', '$location', 'dataService', function LoginCtrl( $scope, $window, $location, dataService) {
+.controller( 'LoginCtrl', ['$scope', '$window', 'dataService', function LoginCtrl( $scope, $window, dataService) {
   var promise = dataService.getUsers();
   $scope.name = 'login';
   $scope.credentials = {

@@ -3,23 +3,26 @@ describe( 'login page', function() {
     var userDetails =
     {
         username: 'lloyd23',
-        email: 'password'
+        password: 'password'
     },
-    remoteUserDetails = {
-        users: [
-            {
-                username: 'admin@admin.com',
-                password: 'admin'
-            },
-            {
-                username: 'lloyd23',
-                password: 'password'
-            }
-        ]
-    },
+    remoteUserDetails = [
+        {
+            username: 'admin@admin.com',
+            password: 'admin'
+        },
+        {
+            username: 'lloyd23',
+            password: 'password'
+        },
+        {
+            username: '',
+            password: ''
+        }
+    ],
     $scope,
-        $window,
-        $location,
+    mockWindow = {
+        location: ''
+    },
     dataService,
 
     path = '/welcome';
@@ -27,21 +30,14 @@ describe( 'login page', function() {
     beforeEach( module( 'dataService'));
     beforeEach( module( 'simpleApp.login'));
 
-
-    beforeEach(inject(function($rootScope, $window, $location, $controller, _dataService_) {
+    beforeEach(inject(function($rootScope, $controller, _dataService_) {
         $scope = $rootScope.$new();
         dataService = _dataService_;
-        $window = $window;
-        $location = $location;
-        $scope.credentials = userDetails;
-
-        $scope.validateUser(remoteUserDetails);
 
         $controller('LoginCtrl', {
             $scope: $scope,
-            dataService: _dataService_,
-            $window: $window,
-            $location: $location
+            dataService: dataService,
+            $window: mockWindow
         });
     }));
 
@@ -49,7 +45,15 @@ describe( 'login page', function() {
         expect( $scope.name ).toBe('login');
     });
 
-    it( 'ensures path has changed', function() {
-      expect( $scope.isLoggedIn ).toBeTruthy();
+    it( 'should be lloyd23', function() {
+        $scope.credentials = userDetails;
+        expect( $scope.credentials.username ).toBe('lloyd23');
+        expect( $scope.credentials.password ).toBe('password');
     });
+
+    it( 'ensures path has changed', function() {
+        $scope.validateUser(remoteUserDetails);
+        expect( $scope.isLoggedIn ).toBeTruthy();
+    });
+
 });

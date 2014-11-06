@@ -8,7 +8,7 @@ angular.module('dataService', [])
             var defer = $q.defer();
 
             $http
-                .get("data.json") // making http get request to load the json file
+                .get('data.json') // making http get request to load the json file
                 .then(function(response) {
                     defer.resolve(response.data.users);
                 });
