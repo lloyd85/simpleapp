@@ -1,0 +1,16 @@
+<tr>
+    <td>{{discription}}</td>
+    <td>{{price}}</td>
+    <td>
+        <fieldset>
+            <input type="text"
+                   ng-model="quantity"/> <!--ng-model-options="{ getterSetter: true }"--><!--ng-change="change()-->
+            <button ng-click="add()">+</button>
+            <button ng-click="remove()">-</button>
+        </fieldset>
+    </td>
+    <td>{{quantity}} * {{price}}</td>
+    <td>
+        <img src="img/" alt="Delete Icon"/>
+    </td>
+</tr>
